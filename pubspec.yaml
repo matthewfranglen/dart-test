@@ -1,0 +1,7 @@
+name: test
+description: A sample Polymer application
+dependencies:
+    polymer: any
+transformers:
+- polymer:
+    entry_points: web/polymer-template-model-binding/index.html
