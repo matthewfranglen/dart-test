@@ -1,37 +1,46 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <title>Sample app</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
 
     <link rel="import" href="template-direct.html">
   </head>
   <body>
-    <h1>Test Template to Model Binding</h1>
+    <div class="container">
+      <div class="row">
+        <p class="lead text-center">Test Template to Model Binding</p>
+      </div>
 
-    <p>
-        This tests the &lt;template bind&gt; directive and the ability to bind
-        to a specific class.
-    </p>
+      <div class="row">
+        <p class="small text-center">
+          This tests the &lt;template bind&gt; directive and the ability to
+          bind to a specific class.
+        </p>
 
-    <p>
-        This defines a model for a template which supports the count attribute
-        and the increment method.
-    </p>
+        <p class="small text-center">
+          This defines a model for a template which supports the count
+          attribute and the increment method.
+        </p>
 
-    <p>
-        This then defines several 'view' templates which use this model in
-        different ways.
-    </p>
+        <p class="small text-center">
+          This then defines several 'view' templates which use this model in
+          different ways.
+        </p>
 
-    <p>
-        This also defines 'implementation' templates which expose the
-        differences in the way the 'view' templates behave.
-    </p>
+        <p class="small text-center">
+          This also defines 'implementation' templates which expose the
+          differences in the way the 'view' templates behave.
+        </p>
+      </div>
 
-    <template-direct></template-direct>
+      <hr/>
+
+      <div class="row">
+        <template-direct class="col-md-4"></template-direct>
+      </div>
+    </div>
 
     <script type="application/dart">export 'package:polymer/init.dart';</script>
     <script src="packages/browser/dart.js"></script>

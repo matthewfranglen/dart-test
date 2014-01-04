@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <polymer-element name="template-direct" attributes="count">
   <template>
-    <div>
-      <h4>Direct Template</h4>
-      <p>
+    <div class="well">
+      <p class="lead">Direct Template</p>
+      <p class="small">
         This is a direct extension of the template in the normal way
       </p>
-      <button on-click="{{increment}}">Click me</button>
-      <span>(click count: {{count}})</span>
+      <div class="btn btn-primary" on-click="{{increment}}">Click me</div>
+      <span class="pull-right small">(click count: {{count}})</span>
     </div>
-    <style>
-      div {
-        font-size: 24pt;
-        text-align: center;
-        padding: 2em;
-        border: 1px solid grey;
-      }
-      button {
-        font-size: 24pt;
-        margin-bottom: 20px;
-      }
-    </style>
   </template>
   <script type="application/dart" src="template-direct.dart"></script>
 </polymer-element>

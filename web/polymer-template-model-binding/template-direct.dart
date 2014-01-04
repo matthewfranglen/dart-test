@@ -10,5 +10,9 @@ import 'model.dart';
  */
 @CustomTag('template-direct')
 class TemplateDirect extends ModelImplementation {
+  // This lets the Bootstrap CSS "bleed through" into the Shadow DOM
+  // of this element.
+  bool get applyAuthorStyles => true;
+
   TemplateDirect.created() : super.created() {}
 }
