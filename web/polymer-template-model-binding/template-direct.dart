@@ -9,7 +9,7 @@ import 'model.dart';
  * The count attribute works as expected.
  */
 @CustomTag('template-direct')
-class TemplateDirect extends ModelImplementation {
+class TemplateDirect extends ModelElement {
   // This lets the Bootstrap CSS "bleed through" into the Shadow DOM
   // of this element.
   bool get applyAuthorStyles => true;

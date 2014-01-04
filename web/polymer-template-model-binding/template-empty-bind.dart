@@ -6,7 +6,7 @@ import 'model.dart';
  * content is within a <template bind> node.
  */
 @CustomTag('template-empty-bind')
-class TemplateEmptyBind extends ModelImplementation {
+class TemplateEmptyBind extends ModelElement {
   // This lets the Bootstrap CSS "bleed through" into the Shadow DOM
   // of this element.
   bool get applyAuthorStyles => true;
