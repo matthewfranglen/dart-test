@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<polymer-element name="template-empty-bind" attributes="count">
+  <template>
+    <template bind>
+      <div class="well">
+        <p class="lead">Empty Bind Template</p>
+        <p class="small">
+          The direct extension of the template in the normal way, except that the
+          content is within a &lt;template bind&gt; node.
+        </p>
+        <div class="btn btn-primary" on-click="{{increment}}">Click me</div>
+        <span class="pull-right small">(click count: {{count}})</span>
+      </div>
+    </template>
+  </template>
+  <script type="application/dart" src="template-empty-bind.dart"></script>
+</polymer-element>
+
