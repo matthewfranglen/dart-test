@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample app</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+
+    <link rel="import" href="container-1.html">
+    <link rel="import" href="container-2.html">
+    <link rel="import" href="container-3.html">
+    <link rel="import" href="template-bind.html">
+    <link rel="import" href="template-direct.html">
+    <link rel="import" href="template-empty-bind.html">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <p class="lead text-center">Test Template to Model Binding</p>
+      </div>
+
+      <div class="row">
+        <p class="small text-center">
+          This tests the &lt;template bind&gt; directive and the ability to
+          bind to a specific class.
+        </p>
+
+        <p class="small text-center">
+          This defines a model for a template which supports the count
+          attribute and the increment method.
+        </p>
+
+        <p class="small text-center">
+          This then defines several 'view' templates which use this model in
+          different ways.
+        </p>
+
+        <p class="small text-center">
+          This also defines 'implementation' templates which expose the
+          differences in the way the 'view' templates behave.
+        </p>
+      </div>
+
+      <hr/>
+
+      <div class="row">
+        <template-direct class="col-md-4"></template-direct>
+        <template-empty-bind class="col-md-4"></template-empty-bind>
+        <template-bind class="col-md-4"></template-bind>
+      </div>
+
+      <div class="row">
+        <container-1 class="col-md-12"></container-1>
+        <container-2 class="col-md-12"></container-2>
+        <container-3 class="col-md-12"></container-3>
+      </div>
+    </div>
+
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
