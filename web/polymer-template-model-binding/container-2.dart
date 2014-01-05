@@ -10,5 +10,7 @@ class Container2 extends PolymerElement {
   // of this element.
   bool get applyAuthorStyles => true;
 
+  @published int count = 0;
+
   Container2.created() : super.created() {}
 }
