@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<polymer-element name="container-1" attributes="count">
+  <template>
+    <div class="border">
+      <div class="row">
+        <template-direct class="col-md-4"></template-direct>
+        <template-empty-bind class="col-md-4"></template-empty-bind>
+        <template-bind class="col-md-4"></template-bind>
+      </div>
+    </div>
+    <style>
+      .border {
+        border: 1px dotted grey;
+        padding: 1em 1em 0 1em;
+      }
+      .border > div {
+        -moz-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+      }
+    </style>
+  </template>
+  <script type="application/dart" src="container-1.dart"></script>
+</polymer-element>
+
