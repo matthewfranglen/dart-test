@@ -12,7 +12,7 @@ class TemplateBind extends PolymerElement {
   bool get applyAuthorStyles => true;
 
   TemplateBind.created() : super.created() {}
-  
+
   var counter = 0;
 
   void enteredView() {
