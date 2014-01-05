@@ -13,14 +13,14 @@ class TemplateBind extends PolymerElement {
 
   TemplateBind.created() : super.created() {}
 
-  var counter = 0;
+  var count;
 
   void enteredView() {
     super.enteredView();
     ModelImplementation model;
 
     model = new ModelImplementation();
-    bindProperty(const Symbol("counter"), model, "counter");
-    bind("increment", model);
+    bindProperty(const Symbol("count"), model, "count");
+    bind("increment", model, "increment");
   }
 }
